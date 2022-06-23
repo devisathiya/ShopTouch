@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tbs.shoptouch.page.Testcase">
+      <class name="com.tbs.shoptouch.test.Homepage">
         <methods>
           <include name="reportgeneration"/>
-          <include name="logintest"/>
           <include name="tearDown"/>
           <include name="extendReport"/>
           <include name="setup"/>
+          <include name="headercheck"/>
         </methods>
-      </class> <!-- com.tbs.shoptouch.page.Testcase -->
+      </class> <!-- com.tbs.shoptouch.test.Homepage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
