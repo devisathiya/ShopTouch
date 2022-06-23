@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <classes>
-  		<!-- <class name="com.tbs.shop.utilities.Browsersetup"/> -->
-  		<class name="com.tbs.shop.page.Testcase"/> 
+  		
+  		<class name="com.tbs.shoptouch.test.Homepage"/> 
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
