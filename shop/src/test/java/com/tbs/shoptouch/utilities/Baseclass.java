@@ -3,7 +3,7 @@ package com.tbs.shoptouch.utilities;
 import java.io.File;
 
 import org.testng.annotations.AfterTest;
-
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -16,7 +16,7 @@ public class Baseclass extends Browser{
 	public static ExtentSparkReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest testName;		
-	@BeforeTest
+	@BeforeSuite
 	public void extendReport() {
 			try {
 				File file = new File("Test Reports");
@@ -37,7 +37,7 @@ public class Baseclass extends Browser{
 
 		}
 	
-	@BeforeTest
+	@BeforeSuite
 	public void setup() {
 		setProperties();
 		StartBrowser();
