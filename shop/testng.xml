@@ -5,7 +5,7 @@
     <classes>
       <class name="com.tbs.shoptouch.test.Login"/>
    
-      <class name="com.tbs.shoptouch.test.ItemMenuClassFamily"/>
+      <class name="com.tbs.shoptouch.test.Releasetestcases"/>
       <class name="com.tbs.shoptouch.utilities.Baseclass"/>
     </classes>
   </test> <!-- Test -->

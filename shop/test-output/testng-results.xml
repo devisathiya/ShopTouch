@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="11" passed="3" failed="0" skipped="0">
+<testng-results ignored="8" total="12" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-24T04:48:24Z" name="Suite" finished-at="2022-06-24T04:54:45Z" duration-ms="380871">
+  <suite started-at="2022-06-23T05:43:51Z" name="Suite" finished-at="2022-06-23T05:44:39Z" duration-ms="48678">
     <groups>
     </groups>
-    <test started-at="2022-06-24T04:48:24Z" name="Test" finished-at="2022-06-24T04:54:45Z" duration-ms="380871">
+    <test started-at="2022-06-23T05:43:51Z" name="Test" finished-at="2022-06-23T05:44:39Z" duration-ms="48678">
       <class name="com.tbs.shoptouch.test.Login">
-        <test-method is-config="true" signature="extendReport()[pri:0, instance:com.tbs.shoptouch.test.Login@492691d7]" started-at="2022-06-24T04:48:24Z" name="extendReport" finished-at="2022-06-24T04:48:24Z" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="extendReport()[pri:0, instance:com.tbs.shoptouch.test.Login@78d6692f]" started-at="2022-06-23T05:43:51Z" name="extendReport" finished-at="2022-06-23T05:43:51Z" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extendReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tbs.shoptouch.test.Login@492691d7]" started-at="2022-06-24T04:48:24Z" name="setup" finished-at="2022-06-24T04:48:29Z" duration-ms="4269" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tbs.shoptouch.test.Login@78d6692f]" started-at="2022-06-23T05:43:51Z" name="setup" finished-at="2022-06-23T05:43:56Z" duration-ms="5272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logintest(java.lang.String, java.lang.String)[pri:0, instance:com.tbs.shoptouch.test.Login@492691d7]" started-at="2022-06-24T04:48:29Z" name="logintest" data-provider="getLogindata" finished-at="2022-06-24T04:48:29Z" duration-ms="440" status="PASS">
+        <test-method signature="logintest(java.lang.String, java.lang.String)[pri:0, instance:com.tbs.shoptouch.test.Login@78d6692f]" started-at="2022-06-23T05:43:56Z" name="logintest" data-provider="getLogindata" finished-at="2022-06-23T05:43:57Z" duration-ms="435" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,37 +31,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tbs.shoptouch.test.Login@492691d7]" started-at="2022-06-24T04:48:29Z" name="tearDown" finished-at="2022-06-24T04:48:29Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tbs.shoptouch.test.Login@78d6692f]" started-at="2022-06-23T05:43:57Z" name="tearDown" finished-at="2022-06-23T05:43:57Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="validloginsession()[pri:0, instance:com.tbs.shoptouch.test.Login@492691d7]" started-at="2022-06-24T04:48:29Z" name="validloginsession" finished-at="2022-06-24T04:48:30Z" duration-ms="722" status="PASS">
+        <test-method signature="validloginsession()[pri:0, instance:com.tbs.shoptouch.test.Login@78d6692f]" started-at="2022-06-23T05:43:57Z" name="validloginsession" finished-at="2022-06-23T05:43:58Z" duration-ms="742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validloginsession -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tbs.shoptouch.test.Login@492691d7]" started-at="2022-06-24T04:48:30Z" name="tearDown" finished-at="2022-06-24T04:48:30Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tbs.shoptouch.test.Login@78d6692f]" started-at="2022-06-23T05:43:58Z" name="tearDown" finished-at="2022-06-23T05:43:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportgeneration()[pri:0, instance:com.tbs.shoptouch.test.Login@492691d7]" started-at="2022-06-24T04:54:44Z" name="reportgeneration" finished-at="2022-06-24T04:54:45Z" duration-ms="450" status="PASS">
+        <test-method is-config="true" signature="reportgeneration()[pri:0, instance:com.tbs.shoptouch.test.Login@78d6692f]" started-at="2022-06-23T05:44:39Z" name="reportgeneration" finished-at="2022-06-23T05:44:39Z" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportgeneration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tbs.shoptouch.test.Login@492691d7]" started-at="2022-06-24T04:54:45Z" name="tearDown" finished-at="2022-06-24T04:54:45Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tbs.shoptouch.test.Login@78d6692f]" started-at="2022-06-23T05:44:39Z" name="tearDown" finished-at="2022-06-23T05:44:39Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tbs.shoptouch.test.Login -->
-      <class name="com.tbs.shoptouch.test.ItemMenuClassFamily">
-        <test-method signature="menus()[pri:0, instance:com.tbs.shoptouch.test.ItemMenuClassFamily@27216cd]" started-at="2022-06-24T04:48:30Z" name="menus" finished-at="2022-06-24T04:54:42Z" duration-ms="371989" status="PASS">
+      <class name="com.tbs.shoptouch.test.Releasetestcases">
+        <test-method signature="releaseui()[pri:0, instance:com.tbs.shoptouch.test.Releasetestcases@7a55af6b]" started-at="2022-06-23T05:43:58Z" name="releaseui" finished-at="2022-06-23T05:43:58Z" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- menus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tbs.shoptouch.test.ItemMenuClassFamily@27216cd]" started-at="2022-06-24T04:54:44Z" name="tearDown" finished-at="2022-06-24T04:54:44Z" duration-ms="2" status="PASS">
+        </test-method> <!-- releaseui -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tbs.shoptouch.test.Releasetestcases@7a55af6b]" started-at="2022-06-23T05:43:58Z" name="tearDown" finished-at="2022-06-23T05:43:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tbs.shoptouch.test.ItemMenuClassFamily -->
+        <test-method signature="releasefunc()[pri:0, instance:com.tbs.shoptouch.test.Releasetestcases@7a55af6b]" started-at="2022-06-23T05:43:58Z" name="releasefunc" finished-at="2022-06-23T05:44:39Z" depends-on-methods="com.tbs.shoptouch.test.Releasetestcases.releaseui" duration-ms="41369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releasefunc -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tbs.shoptouch.test.Releasetestcases@7a55af6b]" started-at="2022-06-23T05:44:39Z" name="tearDown" finished-at="2022-06-23T05:44:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tbs.shoptouch.test.Releasetestcases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
