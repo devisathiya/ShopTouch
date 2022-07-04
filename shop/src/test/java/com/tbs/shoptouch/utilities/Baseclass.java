@@ -1,5 +1,6 @@
 package com.tbs.shoptouch.utilities;
 
+import org.testng.annotations.AfterMethod;
 import java.io.File;
 
 import org.testng.annotations.AfterTest;
@@ -43,9 +44,10 @@ public class Baseclass extends Browser{
 		StartBrowser();
 	}
 	
+	@AfterMethod
 	@AfterTest
 	public void tearDown() {
-		quitbrowser(driver);
+		//quitbrowser(driver);
 	}
 	@AfterTest
 	public void reportgeneration() {

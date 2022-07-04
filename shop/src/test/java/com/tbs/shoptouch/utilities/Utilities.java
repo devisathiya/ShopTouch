@@ -76,7 +76,6 @@ public class Utilities {
 		}
 
 	}
-	
 	public static void closePrintPreview() {
         String jsCancel = "return document.querySelector('print-preview-app')" +
                 ".shadowRoot.querySelector('#sidebar')" +
@@ -97,5 +96,6 @@ public class Utilities {
 
         driver.switchTo().window(driver.getWindowHandles().toArray(new String[0])[0]);
     }
+	
 	
 }	
