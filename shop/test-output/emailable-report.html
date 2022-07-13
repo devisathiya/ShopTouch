@@ -9,13 +9,43 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">48,678</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num attn">1</td><td class="num attn">2</td><td class="num">43,855</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.tbs.shoptouch.test.Login</td><td><a href="#m0">logintest</a></td><td rowspan="1">1655963036922</td><td rowspan="1">435</td></tr><tr class="passedeven"><td><a href="#m1">validloginsession</a></td><td rowspan="1">1655963037365</td><td rowspan="1">742</td></tr><tr class="passedodd"><td rowspan="2">com.tbs.shoptouch.test.Releasetestcases</td><td><a href="#m2">releasefunc</a></td><td rowspan="1">1655963038162</td><td rowspan="1">41369</td></tr><tr class="passedodd"><td><a href="#m3">releaseui</a></td><td rowspan="1">1655963038110</td><td rowspan="1">47</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tbs.shoptouch.test.Login</td><td><a href="#m0">validloginsession</a></td><td rowspan="1">1657686107221</td><td rowspan="1">57</td></tr><tr class="failedodd"><td rowspan="1">com.tbs.shoptouch.test.Releasetestcases</td><td><a href="#m1">releaseui</a></td><td rowspan="1">1657686114634</td><td rowspan="1">30049</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.tbs.shoptouch.test.Releasetestcases</td><td><a href="#m2">releasefunc</a></td><td rowspan="1">1657686144686</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.tbs.shoptouch.test.Barcodetestcases</td><td><a href="#m3">barcodescan</a></td><td rowspan="1">1657686107288</td><td rowspan="1">7344</td></tr><tr class="passedodd"><td rowspan="1">com.tbs.shoptouch.test.Login</td><td><a href="#m4">logintest</a></td><td rowspan="1">1657686106835</td><td rowspan="1">376</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.tbs.shoptouch.test.Login#logintest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>SAN1</td><td>123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.tbs.shoptouch.test.Login#validloginsession</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.tbs.shoptouch.test.Releasetestcases#releasefunc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.tbs.shoptouch.test.Releasetestcases#releaseui</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.tbs.shoptouch.test.Login#validloginsession</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: &apos;org.springframework.core.convert.ConversionService org.springframework.core.convert.support.DefaultConversionService.getSharedInstance()&apos;
+	at org.springframework.jdbc.core.SingleColumnRowMapper.&lt;init&gt;(SingleColumnRowMapper.java:54)
+	at org.springframework.jdbc.core.JdbcTemplate.getSingleColumnRowMapper(JdbcTemplate.java:1430)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:515)
+	at com.tbs.shoptouch.test.Login.validloginsession(Login.java:50)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.tbs.shoptouch.test.Releasetestcases#releaseui</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class, &apos;zeroPadding ng-star-inserted&apos;)]/button[4]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;DESKTOP-HIFRQD1&apos;, ip: &apos;192.168.200.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b24bac3ac794fbac83e70bac95e065fc
+*** Element info: {Using=xpath, value=//div[contains(@class, &apos;zeroPadding ng-star-inserted&apos;)]/button[4]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isEnabled(Unknown Source)
+	at com.tbs.shoptouch.test.Releasetestcases.releaseui(Releasetestcases.java:17)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.tbs.shoptouch.test.Releasetestcases#releasefunc</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Releasetestcases.releasefunc()[pri:0, instance:com.tbs.shoptouch.test.Releasetestcases@8576fa0] depends on not successfully finished methods
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.tbs.shoptouch.test.Barcodetestcases#barcodescan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.tbs.shoptouch.test.Login#logintest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>SAN1</td><td>123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
