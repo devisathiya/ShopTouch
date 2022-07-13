@@ -4,15 +4,34 @@
   <test thread-count="5" name="Test(failed)">
     <classes>
 
+      <class name="com.tbs.shoptouch.test.Releasetestcases">
+
+
       <class name="com.tbs.shoptouch.test.Homepage">
 
       <class name="com.tbs.shoptouch.test.Holdtestcases">
 
+
+        <methods>
+          <include name="releaseui"/>
+          <include name="reportgeneration"/>
+          <include name="tearDown"/>
+          <include name="extendReport"/>
+          <include name="setup"/>
+
+          <include name="releasefunc"/>
+        </methods>
+      </class> <!-- com.tbs.shoptouch.test.Releasetestcases -->
+      <class name="com.tbs.shoptouch.test.Login">
         <methods>
           <include name="reportgeneration"/>
           <include name="tearDown"/>
           <include name="extendReport"/>
           <include name="setup"/>
+          <include name="validloginsession"/>
+        </methods>
+      </class> <!-- com.tbs.shoptouch.test.Login -->
+
 
           <include name="headercheck"/>
         </methods>
@@ -21,6 +40,7 @@
           <include name="hold"/>
         </methods>
       </class> <!-- com.tbs.shoptouch.test.Holdtestcases -->
+
 
     </classes>
   </test> <!-- Test(failed) -->

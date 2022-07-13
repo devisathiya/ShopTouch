@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -97,10 +97,57 @@
                 <ul>
                   <li>
 
+                    <span class="method-stats">5 methods, 2 failed,  1 skipped,  2 passed</span>
+
+
                     <span class="method-stats">2 methods, 1 failed,   1 passed</span>
 
                     <span class="method-stats">4 methods,   4 passed</span>
 
+
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tbs.shoptouch.test.Releasetestcases" class="method navigator-link" hash-for-method="releaseui">releaseui</a> <!-- method navigator-link -->
+
+
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tbs.shoptouch.test.Homepage" class="method navigator-link" hash-for-method="headercheck">headercheck</a> <!-- method navigator-link -->
+
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tbs.shoptouch.test.Login" class="method navigator-link" hash-for-method="logintest(SAN1, 123)">logintest(SAN1, 123)</a> <!-- method navigator-link -->
+
+
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tbs.shoptouch.test.Login" class="method navigator-link" hash-for-method="validloginsession">validloginsession</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tbs.shoptouch.test.Releasetestcases" class="method navigator-link" hash-for-method="releasefunc">releasefunc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,28 +157,13 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.tbs.shoptouch.test.Homepage" class="method navigator-link" hash-for-method="headercheck">headercheck</a> <!-- method navigator-link -->
-
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tbs.shoptouch.test.Barcodetestcases" class="method navigator-link" hash-for-method="barcodescan">barcodescan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.tbs.shoptouch.test.Login" class="method navigator-link" hash-for-method="logintest(SAN1, 123)">logintest(SAN1, 123)</a> <!-- method navigator-link -->
-
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tbs.shoptouch.test.Releasetestcases" class="method navigator-link" hash-for-method="releasefunc">releasefunc</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tbs.shoptouch.test.Releasetestcases" class="method navigator-link" hash-for-method="releaseui">releaseui</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tbs.shoptouch.test.Login" class="method navigator-link" hash-for-method="validloginsession">validloginsession</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -160,8 +192,12 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
+
+              <img src="failed.png"/>
+              <span class="class-name">com.tbs.shoptouch.test.Releasetestcases</span>
+
 
               <img src="failed.png"/>
               <span class="class-name">com.tbs.shoptouch.test.Homepage</span>
@@ -214,10 +250,41 @@
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.tbs.shoptouch.test.Homepage</span>
+
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+
+                  <a name="releaseui">
+                  </a> <!-- releaseui -->
+                  <span class="method-name">releaseui</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class, &apos;zeroPadding ng-star-inserted&apos;)]/button[4]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;DESKTOP-HIFRQD1&apos;, ip: &apos;192.168.200.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b24bac3ac794fbac83e70bac95e065fc
+*** Element info: {Using=xpath, value=//div[contains(@class, &apos;zeroPadding ng-star-inserted&apos;)]/button[4]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isEnabled(Unknown Source)
+	at com.tbs.shoptouch.test.Releasetestcases.releaseui(Releasetestcases.java:17)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+
                   <a name="btncheck">
                   </a> <!-- btncheck -->
                   <span class="method-name">btncheck</span>
@@ -234,20 +301,36 @@
                   </a> <!-- logintest(SAN1, 123) -->
                   <span class="method-name">logintest</span>
                   <span class="parameters">(SAN1, 123)</span>
+
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tbs.shoptouch.test.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="validloginsession">
                   </a> <!-- validloginsession -->
                   <span class="method-name">validloginsession</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;org.springframework.core.convert.ConversionService org.springframework.core.convert.support.DefaultConversionService.getSharedInstance()&apos;
+	at org.springframework.jdbc.core.SingleColumnRowMapper.&lt;init&gt;(SingleColumnRowMapper.java:54)
+	at org.springframework.jdbc.core.JdbcTemplate.getSingleColumnRowMapper(JdbcTemplate.java:1430)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:515)
+	at com.tbs.shoptouch.test.Login.validloginsession(Login.java:50)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.tbs.shoptouch.test.Releasetestcases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -256,13 +339,40 @@
                   <a name="releasefunc">
                   </a> <!-- releasefunc -->
                   <span class="method-name">releasefunc</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Releasetestcases.releasefunc()[pri:0, instance:com.tbs.shoptouch.test.Releasetestcases@8576fa0] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tbs.shoptouch.test.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="releaseui">
-                  </a> <!-- releaseui -->
-                  <span class="method-name">releaseui</span>
+                  <a name="logintest(SAN1, 123)">
+                  </a> <!-- logintest(SAN1, 123) -->
+                  <span class="method-name">logintest</span>
+                  <span class="parameters">(SAN1, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tbs.shoptouch.test.Barcodetestcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="barcodescan">
+                  </a> <!-- barcodescan -->
+                  <span class="method-name">barcodescan</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -284,6 +394,7 @@
       &lt;class name=&quot;com.tbs.shoptouch.test.Homepage&quot;/&gt;
 
       &lt;class name=&quot;com.tbs.shoptouch.test.Login&quot;/&gt;
+      &lt;class name=&quot;com.tbs.shoptouch.test.Barcodetestcases&quot;/&gt;
       &lt;class name=&quot;com.tbs.shoptouch.test.Releasetestcases&quot;/&gt;
       &lt;class name=&quot;com.tbs.shoptouch.utilities.Baseclass&quot;/&gt;
 
@@ -300,7 +411,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -327,6 +438,9 @@ data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 
+data.addRows(5);
+
+
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'headercheck')
@@ -345,27 +459,32 @@ return data;
               </div> <!-- times-div-Default_suite -->
 
 data.addRows(4);
+
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'releasefunc')
+data.setCell(0, 1, 'releaseui')
 data.setCell(0, 2, 'com.tbs.shoptouch.test.Releasetestcases')
-data.setCell(0, 3, 41369);
+data.setCell(0, 3, 30049);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validloginsession')
-data.setCell(1, 2, 'com.tbs.shoptouch.test.Login')
-data.setCell(1, 3, 742);
+data.setCell(1, 1, 'barcodescan')
+data.setCell(1, 2, 'com.tbs.shoptouch.test.Barcodetestcases')
+data.setCell(1, 3, 7344);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'logintest')
 data.setCell(2, 2, 'com.tbs.shoptouch.test.Login')
-data.setCell(2, 3, 435);
+data.setCell(2, 3, 376);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'releaseui')
-data.setCell(3, 2, 'com.tbs.shoptouch.test.Releasetestcases')
-data.setCell(3, 3, 47);
+data.setCell(3, 1, 'validloginsession')
+data.setCell(3, 2, 'com.tbs.shoptouch.test.Login')
+data.setCell(3, 3, 57);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'releasefunc')
+data.setCell(4, 2, 'com.tbs.shoptouch.test.Releasetestcases')
+data.setCell(4, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
 
@@ -381,9 +500,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tbs.shoptouch.test.Releasetestcases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportgeneration</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">extendReport</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.tbs.shoptouch.utilities.Baseclass</span>
               <div class="ignored-methods-div">
@@ -398,7 +530,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.tbs.shoptouch.test.Releasetestcases</span>
+              <span class="ignored-class-name">com.tbs.shoptouch.test.Barcodetestcases</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">reportgeneration</span>
                 <br/>
@@ -431,6 +563,9 @@ return data;
               <div class="configuration-suite before">
                 <span class="method-name">setup</span>
 
+                <span class="method-start">328 ms</span>
+
+
                 <span class="method-start">394 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
@@ -452,52 +587,64 @@ return data;
                 <span class="method-start">368516 ms</span>
 
                 <span class="method-start">330 ms</span>
+
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">logintest(SAN1, 123)</span>
-                <span class="method-start">5620 ms</span>
+                <span class="method-start">5612 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5996 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validloginsession</span>
+                <span class="method-start">5998 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
                 <span class="method-start">6061 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tbs.shoptouch.test.Barcodetestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">validloginsession</span>
-                <span class="method-start">6063 ms</span>
+                <span class="method-name">barcodescan</span>
+                <span class="method-start">6065 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6806 ms</span>
+                <span class="method-start">13410 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tbs.shoptouch.test.Releasetestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">releaseui</span>
-                <span class="method-start">6808 ms</span>
+                <span class="method-start">13411 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6859 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">releasefunc</span>
-                <span class="method-start">6860 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">48233 ms</span>
+                <span class="method-start">43463 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tbs.shoptouch.test.Login</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">reportgeneration</span>
-                <span class="method-start">48234 ms</span>
+                <span class="method-start">43465 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
+
+                <span class="method-start">43848 ms</span>
+
                 <span class="method-start">48676 ms</span>
+
 
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
