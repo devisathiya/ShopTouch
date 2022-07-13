@@ -26,26 +26,26 @@ public class Testcase extends Baseclass{
 //
 //	}
 	
-	@DataProvider
-	public Object[][] getLogindata() throws InvalidFormatException, IOException {
-		Object dataset[][]=Excelutil.getTestdata("Login");
-		//return new Object[][] {{"SAT1","123"},{"SAN1","123"}};
-		return dataset;
-	}
-	
-	@Test(dataProvider="getLogindata")
-	public void logintest(String username,String password) throws InvalidFormatException, IOException {
-		WebElement userid=driver.findElement(By.xpath("//*[@id='userName']"));
-		WebElement pwd=driver.findElement(By.xpath("//*[@id = 'password']"));
-		WebElement login= driver.findElement(By.xpath("//*[@id = 'submit']"));
-		
-		userid.sendKeys(username);
-		System.out.println(username);
-		pwd.sendKeys(password);
-		System.out.println(username);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		login.click();
-		
-	}
-	
+//	@DataProvider
+//	public Object[][] getLogindata() throws InvalidFormatException, IOException {
+//		Object dataset[][]=Excelutil.getTestdata("Login");
+//		//return new Object[][] {{"SAT1","123"},{"SAN1","123"}};
+//		return dataset;
+//	}
+//	
+//	@Test(dataProvider="getLogindata")
+//	public void logintest(String username,String password) throws InvalidFormatException, IOException {
+//		WebElement userid=driver.findElement(By.xpath("//*[@id='userName']"));
+//		WebElement pwd=driver.findElement(By.xpath("//*[@id = 'password']"));
+//		WebElement login= driver.findElement(By.xpath("//*[@id = 'submit']"));
+//		
+//		userid.sendKeys(username);
+//		System.out.println(username);
+//		pwd.sendKeys(password);
+//		System.out.println(username);
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		login.click();
+//		
+//	}
+//	
 }
